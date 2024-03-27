@@ -21,20 +21,20 @@ body {
 
 section {
     padding: 1rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     background-color: var(--section-background-color);
     max-width: min-content;
 }
 
 #qr-code {
-    border-radius: 1.5rem;
-    width: 20dvh;
+    border-radius: 1rem;
+    width: 280px;
 }
 
 #info {
+    margin: 1rem;
     text-align: center;
     font-family: 'Outfit';
-    margin: 1rem 0.5rem;
 }
 
 #info strong {
@@ -43,11 +43,10 @@ section {
     font-weight: 700;
 }
 
-#info p {
+#info > p {
     color: var(--font-color);
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 0;
 }
 
 /* author attribution. Not part of the exercise */

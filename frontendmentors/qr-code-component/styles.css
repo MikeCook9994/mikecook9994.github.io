@@ -1,47 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+* {
+    --page-background-color: hsl(212, 45%, 89%);
+    --section-background-color: hsl(0, 0%, 100%);
+    --font-color: hsl(220, 15%, 55%);
+    --accent-font-color: hsl(218, 44%, 22%);
+}
+
 body {
     margin: 0;
 }
 
 #container {
-    margin: 0;
+    background-color: var(--page-background-color);
     min-height: 100dvh;
-    background-color: hsl(212, 45%, 89%);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+}
+
+section {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--section-background-color);
+    max-width: min-content;
 }
 
 #qr-code {
     border-radius: 1.5rem;
-    max-width: 20dvw;
-}
-
-section {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    background-color: hsl(0, 0%, 100%);
-    width: min-content;
+    width: 20dvh;
 }
 
 #info {
     text-align: center;
-    font-family: "Outfit";
-    margin: 2rem 3rem 0rem;
+    font-family: 'Outfit';
+    margin: 1rem 0.5rem;
 }
 
 #info strong {
-    color: hsl(218, 44%, 22%);
-    font-size: 2rem;
+    color: var(--accent-font-color);
+    font-size: 20px;
     font-weight: 700;
 }
 
 #info p {
-    color: hsl(220, 15%, 55%);
-    font-size: 1.5rem;
+    color: var(--font-color);
+    font-size: 15px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 /* author attribution. Not part of the exercise */
@@ -57,13 +63,4 @@ section {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-/* design mask for comparison */
-#design {
-    display: none;
-    position: absolute;
-    top: 0;
-    max-height: 100dvh;
-    min-width: 100dvw;
 }

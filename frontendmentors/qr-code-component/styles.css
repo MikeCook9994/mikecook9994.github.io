@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-#container {
+main {
     background-color: var(--page-background-color);
     min-height: 100dvh;
     display: flex;
@@ -37,13 +37,13 @@ section {
     font-family: 'Outfit';
 }
 
-#info strong {
+#info h1 {
     color: var(--accent-font-color);
     font-size: 20px;
     font-weight: 700;
 }
 
-#info > p {
+#info p {
     color: var(--font-color);
     font-size: 15px;
     font-weight: 400;

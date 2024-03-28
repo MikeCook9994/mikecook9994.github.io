@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-* {
+:root {
     --page-background-color: hsl(212, 45%, 89%);
     --section-background-color: hsl(0, 0%, 100%);
     --font-color: hsl(220, 15%, 55%);
@@ -19,15 +19,15 @@ main {
     align-items: center;
 }
 
-section {
+article {
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 20px;
     background-color: var(--section-background-color);
     max-width: min-content;
 }
 
 #qr-code {
-    border-radius: 1rem;
+    border-radius: 20px;
     width: 280px;
 }
 

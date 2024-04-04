@@ -30,6 +30,8 @@
 
     --clr-nutmeg: hsl(14, 45%, 36%);
     --clr-raspberry: hsl(332, 51%, 32%);
+
+    --banner-img-width: 656px;
 }
 
 *,
@@ -44,10 +46,14 @@ html {
     line-height: 1.5;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 body {
-    margin: 0px;
     background: var(--clr-neutral-400);
-    min-height: 100dvh;
+    margin: 0;
 }
 
 h1 {
@@ -61,13 +67,24 @@ h2 {
 }
 
 .wrapper {
-    background: var(--clr-neutral-100);
-    max-width: min-content;
-    margin-inline: auto;
-    padding: 2.5rem;
     margin-block: 10rem;
+    background: var(--clr-neutral-100);
+    margin-inline: auto;
+    width: min-content;
+    padding: 2.5rem;
 }
 
 .banner {
-    min-width: 50%;
+    min-width: var(--banner-img-width);
+}
+
+@media screen and (max-width: 656px) {
+    .wrapper {
+        margin-block: 0rem;
+        padding: 0;
+    }
+
+    main {
+        padding: 2.5rem;
+    }
 }

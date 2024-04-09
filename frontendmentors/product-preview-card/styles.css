@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+    --clr-dark-cyan: hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+
+    --clr-neutral-900: hsl(212, 21%, 14%);
+    --clr-neutral-700: hsl(228, 12%, 48%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--clr-cream);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.product-card {
+    justify-content: center;
+}
+
+.product-details {
+    background: var(--clr-neutral-100);
+}
+
+.product-price-info {
+    display: flex;
+}
+
+@media screen and (min-width: 425px) {
+    .product-card {
+    }
+
+    .product-image img {
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+
+    .product-details {
+        width: 600px;
+    }
+}
